@@ -29,9 +29,6 @@ namespace Clock
             var form = Form.ActiveForm;
             form.TopMost = true;
 
-            // Define the border style of the form to a dialog box.
-            form.FormBorderStyle = FormBorderStyle.FixedDialog;
-
             // Set the MaximizeBox to false to remove the maximize box.
             form.MaximizeBox = false;
 
@@ -40,12 +37,6 @@ namespace Clock
 
             // Set the start position of the form to the center of the screen.
             form.StartPosition = FormStartPosition.CenterScreen;
-
-            // Display the form as a modal dialog box.
-            form.ShowDialog();
-
-
-
         }
 
         private void Timer_Tick(object sender, EventArgs e)
