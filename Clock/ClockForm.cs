@@ -61,6 +61,7 @@ namespace Clock
             var now = DateTime.Now.AddSeconds(this.OffsetInSeconds);
             this.TimeLabel.Text = now.ToString("HH:mm");
             this.SecondsLabel.Text = now.ToString(":ss");
+            this.Text = this.TimeLabel.Text + " " + this.SecondsLabel.Text;
         }
     }
 }
